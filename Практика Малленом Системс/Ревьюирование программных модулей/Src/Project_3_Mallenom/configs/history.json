@@ -1,0 +1,32 @@
+[
+    {
+        "datetime": "2026-10-23 12:51:43",
+        "operation": "Загрузка файла",
+        "details": "C:/Users/user/Videos/Cat.jpg"
+    },
+    {
+        "datetime": "2026-10-23 12:51:53",
+        "operation": "Фильтр ч/б",
+        "details": "Конвертация в Grayscale"
+    },
+    {
+        "datetime": "2026-10-23 12:52:04",
+        "operation": "Обрезка (Crop)",
+        "details": "Область: (255, 26, 1080, 1105)"
+    },
+    {
+        "datetime": "2026-10-23 12:52:19",
+        "operation": "Изменение разрешения",
+        "details": "Новый размер: 834x1079"
+    },
+    {
+        "datetime": "2026-10-23 12:52:29",
+        "operation": "Сохранение",
+        "details": "D:/Рабочий стол/Project_3_Mallenom/output/result.png"
+    },
+    {
+        "datetime": "2026-10-23 12:52:30",
+        "operation": "Отмена (Undo)",
+        "details": "Возврат к предыдущему состоянию"
+    }
+]
