@@ -23,6 +23,7 @@ def ensure_directories_exist():
 
 ensure_directories_exist()
 
+# Настройка логирования
 logging.basicConfig(
     filename=os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs", "app.log"),
     level=logging.INFO,
@@ -31,7 +32,7 @@ logging.basicConfig(
 
 
 class ImageProcessor:
-    """Библиотека обработки изображений (Бизнес-логика)."""
+    """Библиотека обработки изображений."""
 
     @staticmethod
     def get_info(file_path: str) -> dict:
@@ -203,7 +204,8 @@ class MainWindow(QMainWindow):
 
         left_panel = QFrame()
         left_layout = QVBoxLayout(left_panel)
-
+        
+        # Панель инструментов
         btn_box = QGroupBox("Панель инструментов")
         btn_layout = QVBoxLayout(btn_box)
 
@@ -229,6 +231,7 @@ class MainWindow(QMainWindow):
         btn_layout.addWidget(self.btn_undo)
         btn_layout.addWidget(self.btn_save)
 
+        # Изменение размера
         resize_box = QGroupBox("Изменение разрешения")
         resize_layout = QHBoxLayout(resize_box)
         self.spin_w = QSpinBox()
@@ -244,6 +247,7 @@ class MainWindow(QMainWindow):
         resize_layout.addWidget(self.spin_h)
         resize_layout.addWidget(btn_resize)
 
+        # Информация об изображении
         info_box = QGroupBox("Информация об изображении")
         info_layout = QVBoxLayout(info_box)
         self.lbl_info = QLabel("Файл не загружен")
